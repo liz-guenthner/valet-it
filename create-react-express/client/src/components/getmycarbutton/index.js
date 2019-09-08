@@ -4,7 +4,7 @@ import './style.css'
 class GetMyCarButton extends React.Component {
     render() {
         return (
-            <div></div>
+            <button type="button" className="btn btn-success">{this.props.children}</button>
         )
     }
 
