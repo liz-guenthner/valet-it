@@ -7,6 +7,9 @@ import ValetDriverButton from "../src/components/valetdriverbutton";
 import GuestLogin from "../src/components/guestlogin";
 import PayButton from "../src/components/paybutton";
 import PickUpButton from "../src/components/pickupbutton";
+import ModalContainer from "../src/components/modalContainer";
+
+
 
 class App extends Component {
   render() {
@@ -17,6 +20,7 @@ class App extends Component {
       <PayButton>paybutton</PayButton>
       <GuestLogin>guestlogin</GuestLogin>
       <ValetDriverButton>valetdriver</ValetDriverButton>
+      <ModalContainer>modal</ModalContainer>
       </LoginCard>
     );
   }
