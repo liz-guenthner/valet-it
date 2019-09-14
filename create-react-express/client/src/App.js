@@ -4,6 +4,7 @@ import LogoButton from "../src/components/logoButton";
 import LoginCard from "../src/components/loginCard";
 import ValetDriverButton from "../src/components/valetdriverbutton";
 import GuestLogin from "../src/components/guestlogin";
+import GuestLoginForm from "../src/components/guestloginform";
 
 import SeeQueueButton from "../src/components/seequeuebutton";
 
@@ -16,11 +17,13 @@ import PayNowButton from "../src/components/paynowbutton";
 import ModalContainer from "../src/components/modalContainer";
 import GuestForm from "../src/components/guestform";
 
+
 class App extends Component {
   render() {
     return (
       <LoginCard>
       <LogoButton>logo</LogoButton>
+      <GuestLoginForm></GuestLoginForm>
 
       <GuestForm>Guest</GuestForm>
 
