@@ -1,32 +1,26 @@
 import React from 'react';
 import './style.css';
-
+import { Form, FormGroup, Label, Input } from 'reactstrap';
 
 class CreditCardForm extends React.Component {
     render() {
       return (
-        <form>
-        
-          <label for="cc">CC#</label>
-          <input
-            type="text"
-            id="cc"
-            value="xxxx xxxx xxxx xxxx"
-            />
-           <label for="exp">EXP</label>
-          <input
-            type="text"
-            id="exp"
-            value="xxxx"
-            />
-            <label for="ccv">CCV</label>
-          <input
-            type="text"
-            id="ccv"
-            value="xxx"
-            />
-            {this.props.children}
-        </form>
+
+        <Form>
+        <FormGroup>
+          <Label for="cc">CC#</Label>
+          <Input type="text" name="cc" id="cc" placeholder="xxxx xxxx xxxx xxxx" />
+        </FormGroup>
+        <FormGroup>
+          <Label for="exp">Exp Date</Label>
+          <Input type="text" name="exp" id="exp" placeholder="xx xx" />
+        </FormGroup>
+        <FormGroup>
+          <Label for="ccv">CCV#</Label>
+          <Input type="text" name="ccv" id="ccv" placeholder="xxx" />
+        </FormGroup>
+        {this.props.children}
+        </Form>
 
       );
     }
