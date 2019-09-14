@@ -4,6 +4,7 @@ import LogoButton from "../src/components/logoButton";
 import LoginCard from "../src/components/loginCard";
 import ValetDriverButton from "../src/components/valetdriverbutton";
 import GuestLogin from "../src/components/guestlogin";
+import GlobalSubmitButton from "../src/components/globalsubmitbutton";
 
 import SeeQueueButton from "../src/components/seequeuebutton";
 
@@ -21,8 +22,9 @@ class App extends Component {
     return (
       <LoginCard>
       <LogoButton>logo</LogoButton>
+  
 
-      <GuestForm>Guest</GuestForm>
+      <GuestForm><GlobalSubmitButton></GlobalSubmitButton></GuestForm>
 
 
       <SeeQueueButton>seequeue</SeeQueueButton>
