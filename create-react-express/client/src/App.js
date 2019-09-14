@@ -9,8 +9,6 @@ import PayButton from "../src/components/paybutton";
 import PickUpButton from "../src/components/pickupbutton";
 import ModalContainer from "../src/components/modalContainer";
 
-
-
 class App extends Component {
   render() {
     return (
