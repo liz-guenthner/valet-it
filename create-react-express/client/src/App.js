@@ -14,13 +14,15 @@ import PayButton from "../src/components/paybutton";
 import PickUpButton from "../src/components/pickupbutton";
 import PayNowButton from "../src/components/paynowbutton";
 import ModalContainer from "../src/components/modalContainer";
-
+import GuestForm from "../src/components/guestform";
 
 class App extends Component {
   render() {
     return (
       <LoginCard>
       <LogoButton>logo</LogoButton>
+
+      <GuestForm>Guest</GuestForm>
 
 
       <SeeQueueButton>seequeue</SeeQueueButton>
