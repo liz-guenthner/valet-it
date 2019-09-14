@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css'
 
-class GuestLogin extends React.Component {
+class GuestLoginButton extends React.Component {
     render() {
         return (
             <button type="button" className="btn btn-primary btn-lg">{this.props.children}</button>
@@ -10,4 +10,4 @@ class GuestLogin extends React.Component {
 
 }
 
-export default GuestLogin;
+export default GuestLoginButton;

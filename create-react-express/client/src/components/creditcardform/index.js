@@ -2,7 +2,7 @@ import React from 'react';
 import './style.css';
 
 
-class GuestForm extends React.Component {
+class CreditCardForm extends React.Component {
     render() {
       return (
         <form>
@@ -32,4 +32,4 @@ class GuestForm extends React.Component {
     }
   }
 
-export default GuestForm;
+export default CreditCardForm;
