@@ -1,5 +1,6 @@
 import React from 'react';
-import './style.css'
+import './style.css';
+
 
 class GuestForm extends React.Component {
     render() {
@@ -24,8 +25,9 @@ class GuestForm extends React.Component {
             id="ccv"
             value="xxx"
             />
-             
+            {this.props.children}
         </form>
+
       );
     }
   }

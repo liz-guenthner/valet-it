@@ -22,9 +22,9 @@ class App extends Component {
     return (
       <LoginCard>
       <LogoButton>logo</LogoButton>
-      <GlobalSubmitButton>submit</GlobalSubmitButton>
+  
 
-      <GuestForm>Guest</GuestForm>
+      <GuestForm><GlobalSubmitButton></GlobalSubmitButton></GuestForm>
 
 
       <SeeQueueButton>seequeue</SeeQueueButton>

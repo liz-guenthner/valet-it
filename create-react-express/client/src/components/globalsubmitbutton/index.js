@@ -4,7 +4,7 @@ import './style.css'
 class GlobalSubmitButton extends React.Component {
     render() {
         return (
-            <button type="button" className="btn btn-primary btn-lg">{this.props.children}</button>
+            <button type="button" className="btn btn-primary btn-lg">Submit</button>
         )
     }
 
