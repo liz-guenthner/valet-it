@@ -4,7 +4,11 @@ import LogoButton from "../src/components/logoButton";
 import LoginCard from "../src/components/loginCard";
 import ValetDriverButton from "../src/components/valetdriverbutton";
 import GuestLogin from "../src/components/guestlogin";
+
 import SeeQueueButton from "../src/components/seequeuebutton";
+
+import AddCardButton from "../src/components/addcardbutton";
+
 
 import PayButton from "../src/components/paybutton";
 import PickUpButton from "../src/components/pickupbutton";
@@ -18,13 +22,19 @@ class App extends Component {
       <LoginCard>
       <LogoButton>logo</LogoButton>
 
+
       <SeeQueueButton>seequeue</SeeQueueButton>
 
 
-      <PayNowButton>paynowbutton</PayNowButton>
 
+      <AddCardButton>addcard</AddCardButton>
+
+      <PayNowButton>paynowbutton</PayNowButton>
       <PickUpButton>pickupbutton</PickUpButton>
       <PayButton>paybutton</PayButton>
+
+
+
 
 
       <GuestLogin>guestlogin</GuestLogin>
