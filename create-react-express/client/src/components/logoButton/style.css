@@ -1,0 +1,12 @@
+#logo-button {
+    width: 100%;
+    color: #000000;
+    background-color: transparent;
+    border:none;
+    margin-top: -40px;
+}
+
+img {
+    max-width:100px;
+    margin:0 auto;
+}
