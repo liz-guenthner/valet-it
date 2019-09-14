@@ -1,5 +1,7 @@
 .loginCard{
-    border: 3px black solid;
-    width: 100px;
-    height: 100px;
+    background-color: #ffffff;
+    width: 90%;
+    max-width: 400px;
+    height: 580px;
+    margin: 70px auto 0 auto;
 }
