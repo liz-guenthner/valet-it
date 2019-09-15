@@ -1,0 +1,6 @@
+
+in regard to tester:
+
++ done, table generate after app ran; cannot apply to proj2 due to an odd error at the moment, check image1
+
+- need to figure out to store into table... 
