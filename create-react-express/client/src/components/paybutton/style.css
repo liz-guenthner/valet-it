@@ -1,0 +1,27 @@
+.center-buttons {
+    margin: 0 auto;
+}
+.pay-button.btn {
+    display:block;
+    margin: 30px auto;
+    width: 150px;
+}
+
+.pay-button.btn-primary {
+    color: #404040;
+    background-color: #f6de96;
+    border:none;
+}
+.pay-button.btn-primary:hover {
+    color: #404040;
+    background-color: #e4c670;
+    border:none;
+}
+
+.pay-button.modal-dialog {
+    max-width: 350px !important;
+    position: absolute !important;
+    left: 0 !important;
+    right: 0 !important;
+    margin: 150px auto 0 auto !important;
+}

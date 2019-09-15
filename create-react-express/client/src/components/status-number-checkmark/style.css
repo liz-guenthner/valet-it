@@ -1,0 +1,68 @@
+.status-container {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    clear: both;
+}
+
+.status-number-checkmark {
+    width: 33%;
+    float: left;
+    text-align:center;
+}
+#parked {
+    content: "1";
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    padding: 8px;
+    background: #fff;
+    border: 2px solid #d1cdc2;
+    color: #d1cdc2;
+    text-align: center;
+    font-size: 32px;
+    margin: 0 auto;
+    line-height: 42px;
+}
+#parked-check {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    padding: 8px;
+    background: #fff;
+    border: 2px solid #d1cdc2;
+    color: #d1cdc2;
+    text-align: center;
+    font-size: 32px;
+    margin: 0 auto;
+    line-height: 42px;
+}
+#paid {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    padding: 8px;
+    background: #fff;
+    border: 2px solid #d1cdc2;
+    color: #d1cdc2;
+    text-align: center;
+    font-size: 32px;
+    margin: 0 auto;
+    line-height: 42px;
+}
+#inroute {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    padding: 8px;
+    background: #fff;
+    border: 2px solid #d1cdc2;
+    color: #d1cdc2;
+    text-align: center;
+    font-size: 32px;
+    margin: 0 auto;
+    line-height: 42px;
+}
+span.status-text {
+    color: #c5bfb3;
+}
