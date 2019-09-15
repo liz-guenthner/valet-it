@@ -12,7 +12,6 @@ class ValetLoginForm extends React.Component {
           <Label for="badgenumber">Badge Number</Label>
           <Input type="text" name="badgenumber" id="badgenumber" placeholder="" />
         </FormGroup>
-        {this.props.children}
         </Form>
 
       );

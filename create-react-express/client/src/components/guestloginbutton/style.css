@@ -1,11 +1,14 @@
 .center-buttons {
-    width:120px;
+    width:200px;
     margin: 0 auto;
 }
-.guest-login-button.btn,
-.guest-login-submit-button.btn {
+.guest-login-button.btn {
     display:block;
     margin: 30px auto;
+}
+.guest-login-submit-button.btn {
+    display:block;
+    margin: 0 auto;
 }
 
 .guest-login-button.btn-primary,

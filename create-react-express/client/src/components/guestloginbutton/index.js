@@ -26,11 +26,10 @@ class GuestLoginButton extends React.Component {
                 <ModalBody>
                 {this.props.children}
                 </ModalBody>
-                </Modal>
                 <ModalFooter>
                     <Button className="btn-lg btn-primary guest-login-submit-button" onClick={this.toggle}>Submit</Button>
                 </ModalFooter>
-                <GuestLoginButton></GuestLoginButton>
+                </Modal>
             </div>
         )
     }

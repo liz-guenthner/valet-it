@@ -22,7 +22,7 @@ class ValetDriverButton extends React.Component {
             <div className="center-buttons valet-driver-button-modal">
                 <Button className="btn-lg valet-driver-button btn-primary" onClick={this.toggle}>Valet Driver</Button>
                 <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
-                <ModalHeader toggle={this.toggle}>Valet</ModalHeader>
+                <ModalHeader toggle={this.toggle}>Valet Login</ModalHeader>
                 <ModalBody>
                 {this.props.children}
                 </ModalBody>
