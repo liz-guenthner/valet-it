@@ -26,9 +26,6 @@ class PayButton extends React.Component {
                 <ModalBody>
                 {this.props.children}
                 </ModalBody>
-                {/* <ModalFooter>
-                    <Button className="btn-lg btn-primary pay-submit-button" onClick={this.toggle}>Submit</Button>
-                </ModalFooter> */}
                 </Modal>
             </div>
         )

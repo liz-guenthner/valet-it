@@ -25,7 +25,7 @@ class PayNowForm extends React.Component {
         <FormGroup>
             <div className="pay-now-text">Saved Card **** **** **** 0334</div>
             <Button className="btn-lg pay-now-button btn-primary">Pay Now</Button>
-            <Button className="btn-lg add-new-button btn-primary" onClick={this.toggle}>Add New</Button>
+            <Button className="btn-lg add-new-button btn-primary" onClick={this.toggle}>Add Card</Button>
                 <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
                 <ModalHeader toggle={this.toggle}>Add New Card</ModalHeader>
                 <ModalBody>
