@@ -2,6 +2,16 @@
     background-color: #ffffff;
     width: 90%;
     max-width: 400px;
-    height: 580px;
+    height: 450px;
     margin: 70px auto 0 auto;
+    position: relative;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #404040;
 }

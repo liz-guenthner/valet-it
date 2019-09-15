@@ -1,10 +1,37 @@
 import React from 'react';
 import './style.css'
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
 class GuestLoginButton extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+          modal: false
+        };
+    
+        this.toggle = this.toggle.bind(this);
+      }
+    
+      toggle() {
+        this.setState(prevState => ({
+          modal: !prevState.modal
+        }));
+      }
     render() {
         return (
-            <button type="button" className="btn btn-primary btn-lg">{this.props.children}</button>
+            <div className="center-buttons guest-login-button-modal">
+                <Button className="btn-lg btn-primary guest-login-button" onClick={this.toggle}>Guest Login</Button>
+                <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
+                <ModalHeader toggle={this.toggle}>Guest Login</ModalHeader>
+                <ModalBody>
+                {this.props.children}
+                </ModalBody>
+                </Modal>
+                <ModalFooter>
+                    <Button className="btn-lg btn-primary guest-login-submit-button" onClick={this.toggle}>Submit</Button>
+                </ModalFooter>
+                <GuestLoginButton></GuestLoginButton>
+            </div>
         )
     }
 

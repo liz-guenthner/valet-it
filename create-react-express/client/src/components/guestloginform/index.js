@@ -9,18 +9,13 @@ class GuestLoginForm extends React.Component {
 
         <Form>
         <FormGroup>
-          <Label for="firstname">First Name</Label>
-          <Input type="text" name="firstname" id="firstname" placeholder="" />
+          <Label for="username">Username</Label>
+          <Input type="text" name="username" id="username" placeholder="" />
         </FormGroup>
         <FormGroup>
-          <Label for="lastname">Last Name</Label>
-          <Input type="text" name="lastname" id="lastname" placeholder="" />
+          <Label for="password">Password</Label>
+          <Input type="text" name="password" id="password" placeholder="" />
         </FormGroup>
-        <FormGroup>
-          <Label for="licenseplate">License Plate</Label>
-          <Input type="text" name="licenseplate" id="licenseplate" placeholder="" />
-        </FormGroup>
-        {this.props.children}
         </Form>
 
       );
