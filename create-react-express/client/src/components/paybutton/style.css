@@ -1,21 +1,18 @@
 .center-buttons {
     margin: 0 auto;
 }
-.pay-button.btn,
-.pickup-button.btn {
+.pay-button.btn {
     display:block;
     margin: 30px auto;
     width: 150px;
 }
 
-.pay-button.btn-primary,
-.pickup-button.btn-primary {
+.pay-button.btn-primary {
     color: #404040;
     background-color: #f6de96;
     border:none;
 }
-.pay-button.btn-primary:hover,
-.pickup-button.btn-primary:hover {
+.pay-button.btn-primary:hover {
     color: #404040;
     background-color: #e4c670;
     border:none;
