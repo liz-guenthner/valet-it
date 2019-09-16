@@ -17,10 +17,13 @@ p.how {
 }
 
 .smile-container {
-    width: 30%;
+    width: 35%;
     margin: 0 auto 30px auto;
     overflow: hidden;
     clear: both;
+}
+.smile-container a {
+    cursor: pointer;
 }
 
 .smile {

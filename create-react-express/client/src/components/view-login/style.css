@@ -7,3 +7,6 @@
 .btn-focus {
     box-shadow: none;
 }
+a:hover {
+    text-decoration: none;
+}

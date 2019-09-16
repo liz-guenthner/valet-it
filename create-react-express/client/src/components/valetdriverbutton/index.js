@@ -1,6 +1,7 @@
 import React from 'react';
 import './style.css'
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import { Link } from "react-router-dom";
 
 class ValetDriverButton extends React.Component {
     constructor(props) {
@@ -27,7 +28,9 @@ class ValetDriverButton extends React.Component {
                 {this.props.children}
                 </ModalBody>
                 <ModalFooter>
+                  <Link to="/valet-homepage">
                     <Button className="btn-lg btn-primary valet-driver-submit-button" onClick={this.toggle}>Submit</Button>
+                  </Link>
                 </ModalFooter>
                 </Modal>
             </div>

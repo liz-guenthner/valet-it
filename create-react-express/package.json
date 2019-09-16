@@ -24,6 +24,7 @@
     "if-env": "^1.0.4",
     "react-dom": "^16.9.0",
     "react-favicon": "0.0.17",
-    "react-router-dom": "^5.0.1"
+    "react-router-dom": "^5.0.1",
+    "react-timeout": "^1.2.0"
   }
 }

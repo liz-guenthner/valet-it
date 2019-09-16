@@ -1,25 +1,39 @@
 import React from 'react';
 import './style.css';
+import { Link } from "react-router-dom";
 
 class ArrivedModal extends React.Component {
     
     state = {
-        open: true
+        smileOpen: true,
+        sadOpen: true
       }
-      toggleImage = (event) => {
+      toggleSmileImage = (event) => {
         event.preventDefault();
-        this.setState(state => ({ open: !state.open }))
+        this.setState(state => ({ smileOpen: !state.smileOpen }))
+      }
+
+      toggleSadImage = (event) => {
+        event.preventDefault();
+        this.setState(state => ({ sadOpen: !state.sadOpen }))
       }
     
-      getImageSrc = () => this.state.open ? 'starOpen' : 'starYellow'
+      getSmileImageSrc = () => this.state.smileOpen ? 'smileOpen' : 'smileYellow'
+      getSadImageSrc = () => this.state.sadOpen ? 'sadOpen' : 'sadYellow'
 
     render() {
-        const imagePath = {
-            starOpen: "../images/star.png",
-            starYellow: "../images/star-yellow.png"
+        const smileImagePath = {
+            smileOpen: "../images/smile.png",
+            smileYellow: "../images/smile-yellow.png"
+        }
+
+        const sadImagePath = {
+            sadOpen: "../images/sad.png",
+            sadYellow: "../images/sad-yellow.png"
         }
         
-        const imageSrc= this.getImageSrc();
+        const smileImageSrc= this.getSmileImageSrc();
+        const sadImageSrc= this.getSadImageSrc();
 
         return (
 
@@ -27,22 +41,17 @@ class ArrivedModal extends React.Component {
             <p>Your car<br/>has arrived!</p>
             <p className="thank-you">Thank you for your business!</p>
             <p className="how">How did we do?</p>
-            <div className="star-container">
-                <div className="star">
-                    <img src={imagePath[imageSrc]} onClick={this.toggleImage} alt="star-one"></img>
+            <div className="smile-container">
+              <Link to="/">
+                <div className="smile">
+                  <img src={sadImagePath[sadImageSrc]} onClick={this.toggleSadImage} alt="sad"></img>
                 </div>
-                <div className="star">
-                    <img src={imagePath[imageSrc]} onClick={this.toggleImage} alt="star-two"></img>
+              </Link>
+              <Link to="/">
+                <div className="smile">
+                  <img src={smileImagePath[smileImageSrc]} onClick={this.toggleSmileImage} alt="happy"></img>
                 </div>
-                <div className="star">
-                    <img src={imagePath[imageSrc]} onClick={this.toggleImage} alt="star-three"></img>
-                </div>
-                <div className="star">
-                    <img src={imagePath[imageSrc]} onClick={this.toggleImage} alt="star-four"></img>
-                </div>
-                <div className="star">
-                    <img src={imagePath[imageSrc]} onClick={this.toggleImage} alt="star-five"></img>
-                </div>
+              </Link>
             </div>
         </div>
 

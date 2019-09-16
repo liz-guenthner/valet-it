@@ -27,29 +27,28 @@
 #parked img {
     width: 60px;
     margin:0 auto;
-    display:none;
+    display:block;
 }
 #paid img {
     width: 60px;
     margin: 0 auto;
-    display:none;
+    display:block;
 }
 #inroute img {
     width: 60px;
     margin: 0 auto;
-    display:none;
+    display:block;
 }
 #parked img.checked {
-    display:block;
+    display:none;
     margin: 0 auto;
 }
 #paid img.checked {
-    display:block;
+    display:none;
     margin: 0 auto;
 }
 #inroute img.checked {
-    display:block;
-
+    display:none;
     margin: 0 auto;
 }
 span.status-text {

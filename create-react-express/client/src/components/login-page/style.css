@@ -27,3 +27,7 @@
     border: none;
     padding:none;
   }
+  .btn-primary,
+  .btn-secondary {
+    width: 140px;
+  }

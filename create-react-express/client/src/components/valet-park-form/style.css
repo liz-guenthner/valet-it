@@ -1,0 +1,17 @@
+.width48 {
+    width: 48%;
+    float:left;
+}
+.float-left {
+    float:left;
+}
+.float-right {
+    float:right;
+}
+.full-width{
+    width:100%;
+    clear:both;
+}
+#parked-button {
+    margin-left: 100px;
+}

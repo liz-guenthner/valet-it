@@ -1,6 +1,7 @@
 import React from 'react';
 import './style.css'
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import { Link } from "react-router-dom";
 
 class GuestLoginButton extends React.Component {
     constructor(props) {
@@ -27,7 +28,9 @@ class GuestLoginButton extends React.Component {
                 {this.props.children}
                 </ModalBody>
                 <ModalFooter>
+                  <Link to="/dashboard">
                     <Button className="btn-lg btn-primary guest-login-submit-button" onClick={this.toggle}>Submit</Button>
+                  </Link>
                 </ModalFooter>
                 </Modal>
             </div>
