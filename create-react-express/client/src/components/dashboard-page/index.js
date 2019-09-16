@@ -9,6 +9,9 @@ import PayButton from "../paybutton";
 import PayNowForm from "../paynowform";
 import AddNewCardForm from "../addnewcardform";
 import PickUpButton from "../pickupbutton";
+import EstWaitTimeDisplay from "../est-wait-time-display";
+// import ArrivedButton from "../arrived-button";
+// import ArrivedModal from "../arrived-modal";
 
 class DashboardPage extends Component {
   render() {
@@ -20,7 +23,8 @@ class DashboardPage extends Component {
         <ViewLogin>
           <StatusNumberCheckmark></StatusNumberCheckmark>
           <PayButton><PayNowForm><AddNewCardForm></AddNewCardForm></PayNowForm></PayButton>
-          <PickUpButton></PickUpButton>
+          <PickUpButton><EstWaitTimeDisplay></EstWaitTimeDisplay></PickUpButton>
+          {/* <ArrivedButton><ArrivedModal></ArrivedModal></ArrivedButton> */}
         </ViewLogin>
       </LoginCard>
     );

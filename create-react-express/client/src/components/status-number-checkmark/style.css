@@ -32,23 +32,24 @@
 #paid img {
     width: 60px;
     margin: 0 auto;
-    display:block;
+    display:none;
 }
 #inroute img {
     width: 60px;
     margin: 0 auto;
-    display:block;
+    display:none;
 }
 #parked img.checked {
     display:block;
     margin: 0 auto;
 }
 #paid img.checked {
-    display:none;
+    display:block;
     margin: 0 auto;
 }
 #inroute img.checked {
-    display:none;
+    display:block;
+
     margin: 0 auto;
 }
 span.status-text {

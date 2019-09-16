@@ -1,0 +1,35 @@
+.arrived-modal {
+    margin: 0 auto;
+    text-align: center;
+}
+p:first-child {
+    font-size: 2em;
+    line-height: 1.2em;
+    margin: 30px auto;;
+}
+p.thank-you {
+    color: grey;
+    font-style:italic;
+}
+p.how {
+    color: grey;
+    margin: 50px auto 10px auto;
+}
+
+.star-container {
+    width: 70%;
+    margin: 0 auto 30px auto;
+    overflow: hidden;
+    clear: both;
+}
+
+.star {
+    width: 20%;
+    float: left;
+    text-align:center;
+}
+.star img {
+    width: 60px;
+    margin:0;
+    padding:0;
+}

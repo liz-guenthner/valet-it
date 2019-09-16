@@ -32,7 +32,7 @@ class PayNowForm extends React.Component {
                 {this.props.children}
                 </ModalBody>
                 <ModalFooter>
-                    <Button className="btn-lg btn-primary add-new-submit-button" onClick={this.toggle}>Pay Now</Button>
+                    <Button className="btn-lg btn-primary add-new-submit-button" onClick={this.toggle}>Save Card</Button>
                 </ModalFooter>
                 </Modal>
         </FormGroup>
