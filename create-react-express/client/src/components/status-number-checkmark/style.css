@@ -1,0 +1,56 @@
+.status-container {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    clear: both;
+}
+
+.status-number-checkmark {
+    width: 33%;
+    float: left;
+    text-align:center;
+}
+.number {
+    background-image: url("/images/one.jpg");
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    padding: 8px;
+    background: #fff;
+    text-indent: -9999px;
+    color: #d1cdc2;
+    text-align: center;
+    font-size: 32px;
+    margin: 0 auto;
+    line-height: 42px;
+}
+#parked img {
+    width: 60px;
+    margin:0 auto;
+    display:block;
+}
+#paid img {
+    width: 60px;
+    margin: 0 auto;
+    display:block;
+}
+#inroute img {
+    width: 60px;
+    margin: 0 auto;
+    display:block;
+}
+#parked img.checked {
+    display:none;
+    margin: 0 auto;
+}
+#paid img.checked {
+    display:none;
+    margin: 0 auto;
+}
+#inroute img.checked {
+    display:none;
+    margin: 0 auto;
+}
+span.status-text {
+    color: #c5bfb3;
+}

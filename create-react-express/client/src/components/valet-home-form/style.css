@@ -1,0 +1,15 @@
+form {
+    padding: 0 30px;
+}
+.btn-secondary {
+    width: 140px;
+    margin: 0 15px;
+    color: #404040;
+    background-color: #f6de96;
+    border:none;
+}
+.btn-secondary:hover {
+    color: #404040;
+    background-color: #e4c670;
+    border:none;
+}

@@ -1,0 +1,34 @@
+.guest-queue-container {
+    padding: 0 30px;
+    margin-bottom: 30px;
+    
+}
+.guest-queue-table {
+    overflow: hidden;
+    display: inline-block;
+    overflow-y: hidden;
+}
+.guest-queue-container table {
+    display: block;
+    margin-bottom:0;
+}
+.guest-queue-container table thead th {
+    padding: 10px 15px;
+    font-size: 0.9em;
+}
+tbody {
+    overflow-y: scroll;
+    height: 200px;
+    display:block;
+}
+th, td {
+    text-align:center;
+}
+td {
+    font-size: 1.07em;
+}
+#pickup-guest {
+    background-color: #ace1f7;
+}
+
+

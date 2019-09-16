@@ -22,6 +22,7 @@
     color: #404040;
     background-color: #e4c670;
     border:none;
+    text-decoration: none;
 }
 
 .guest-login-button.modal-dialog {
@@ -30,5 +31,9 @@
     left: 0 !important;
     right: 0 !important;
     margin: 150px auto 0 auto !important;
+  }
+
+  .modal-footer {
+      margin: 0 auto;
   }
   

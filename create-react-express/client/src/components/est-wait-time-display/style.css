@@ -1,0 +1,12 @@
+.est-wait-time-display {
+    width:100%;
+}
+.est-wait-time {
+    text-align:center;
+    font-size: 3em;
+    color: #404040;
+}
+.est-wait-time-message {
+    text-align: center;
+    color: #404040;
+}

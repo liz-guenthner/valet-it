@@ -1,8 +1,8 @@
 import React from 'react';
 import './style.css'
-import { Button, Modal, ModalHeader, ModalBody } from 'reactstrap';
+import { Button, Modal, ModalBody, ModalHeader} from 'reactstrap';
 
-class PickUpButton extends React.Component {
+class ArrivedButton extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -19,18 +19,21 @@ class PickUpButton extends React.Component {
       }
     render() {
         return (
-            <div className="center-buttons pickup-button-modal">
-                <Button className="btn-lg pickup-button btn-primary" onClick={this.toggle}>Pick Up</Button>
+            <div className="center-buttons arrived-button-modal">
+                <Button className="btn-lg btn-primary arrived-button" onClick={this.toggle}>Arrived</Button>
                 <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
-                <ModalHeader toggle={this.toggle}>Est Wait Time</ModalHeader>
+                <ModalHeader toggle={this.toggle}></ModalHeader>
                 <ModalBody>
                 {this.props.children}
                 </ModalBody>
-                </Modal> 
+                {/* <ModalFooter>
+                    <Button className="btn-lg btn-primary arrived-submit-button" onClick={this.toggle}>Submit</Button>
+                </ModalFooter> */}
+                </Modal>
             </div>
         )
     }
 
 }
 
-export default PickUpButton;
+export default ArrivedButton;
