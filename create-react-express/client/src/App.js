@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import ValetHomePage from "./components/valet-homepage";
 import ValetPark from "./components/valet-park";
 import GuestQueue from "./components/valet-guest-queue";
+import ValetArrived from "./components/valet-arrived";
 
 class App extends Component {
   render() {
@@ -18,6 +19,7 @@ class App extends Component {
         <Route path='/valet-homepage' exact component={ValetHomePage}></Route>
         <Route path='/valet-park' exact component={ValetPark}></Route>
         <Route path='/valet-guest-queue' exact component={GuestQueue}></Route>
+        <Route path='/valet-arrived' exact component={ValetArrived}></Route>
       </Router>
     );
   }

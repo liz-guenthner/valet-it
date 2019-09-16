@@ -19,49 +19,49 @@ class GuestQueueForm extends React.Component {
             </thead>
             <tbody>
               <tr>
-                <td scope="row">1</td>
+                <td>1</td>
                 <td>139</td>
                 <td>D78DD66</td>
                 <td>Red/Ford/F-150</td>
               </tr>
               <tr>
-                <td scope="row">2</td>
+                <td>2</td>
                 <td>110</td>
                 <td>D78DD66</td>
                 <td>Red/Ford/F-150</td>
               </tr>
               <tr id="pickup-guest">
-                <td scope="row">3</td>
+                <td>3</td>
                 <td>99</td>
                 <td>D78DD66</td>
                 <td>Red/Ford/F-150</td>
               </tr>
               <tr>
-                <td scope="row">4</td>
+                <td>4</td>
                 <td>139</td>
                 <td>D78DD66</td>
                 <td>Red/Ford/F-150</td>
               </tr>
               <tr>
-                <td scope="row">5</td>
+                <td>5</td>
                 <td>110</td>
                 <td>D78DD66</td>
                 <td>Red/Ford/F-150</td>
               </tr>
               <tr>
-                <td scope="row">6</td>
+                <td>6</td>
                 <td>110</td>
                 <td>D78DD66</td>
                 <td>Red/Ford/F-150</td>
               </tr>
               <tr>
-                <td scope="row">7</td>
+                <td>7</td>
                 <td>99</td>
                 <td>D78DD66</td>
                 <td>Red/Ford/F-150</td>
               </tr>
               <tr>
-                <td scope="row">8</td>
+                <td>8</td>
                 <td>139</td>
                 <td>D78DD66</td>
                 <td>Red/Ford/F-150</td>
@@ -71,6 +71,9 @@ class GuestQueueForm extends React.Component {
         </div>
         <div>
           <Link to="/valet-homepage" >
+              <Button className="btn-lg btn-primary" id="valet-home-button" onClick={this.toggle}>Home</Button>
+          </Link>
+          <Link to="/valet-arrived" >
               <Button className="btn-lg btn-primary" id="inroute-button" onClick={this.toggle}>In Route</Button>
           </Link>
         </div>

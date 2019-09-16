@@ -10,6 +10,7 @@
 }
 .guest-queue-container table {
     display: block;
+    margin-bottom:0;
 }
 .guest-queue-container table thead th {
     padding: 10px 15px;
@@ -26,10 +27,8 @@ th, td {
 td {
     font-size: 1.07em;
 }
-#inroute-button {
-    margin-left: 95px;
-}
-
 #pickup-guest {
     background-color: #ace1f7;
 }
+
+
