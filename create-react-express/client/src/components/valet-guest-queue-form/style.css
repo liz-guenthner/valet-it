@@ -7,6 +7,7 @@
     overflow: hidden;
     display: inline-block;
     overflow-y: hidden;
+    font-size: 0.55em;
 }
 .guest-queue-container table {
     display: block;
@@ -30,5 +31,50 @@ td {
 #pickup-guest {
     background-color: #ace1f7;
 }
+.buttons {
+    width: 140px;
+    margin: 0 auto;
+}
+#valet-home-button {
+    margin-bottom: 5px;
+}
+.btn-secondary {
+    color: #404040;
+    background-color: #f6de96;
+    border:none;
+}
 
+.btn-secondary:hover {
+    color: #404040;
+    background-color: #e4c670;
+    border:none;
+}
+
+@media only screen and (min-width: 350px) {
+    .guest-queue-table {
+        font-size: 0.75em;
+    }
+}
+
+@media only screen and (min-width: 400px) {
+    .guest-queue-table {
+        font-size: 0.85em;
+    }
+}
+
+@media only screen and (min-width: 450px) {
+    .guest-queue-table {
+        font-size: 1em;
+    }
+    .buttons {
+        width: 100%;
+        margin: 0 auto;
+    }
+    #valet-home-button {
+        margin: 0 10px;
+    }
+    #inroute-button {
+        margin: 0 10px;
+    }
+}
 
