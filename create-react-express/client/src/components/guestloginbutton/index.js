@@ -1,7 +1,6 @@
 import React from 'react';
 import './style.css'
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
-import { Link } from "react-router-dom";
+import { Button, Modal, ModalHeader, ModalBody } from 'reactstrap';
 
 class GuestLoginButton extends React.Component {
     constructor(props) {
@@ -27,11 +26,6 @@ class GuestLoginButton extends React.Component {
                 <ModalBody>
                 {this.props.children}
                 </ModalBody>
-                <ModalFooter>
-                  <Link to="/dashboard">
-                    <Button className="btn-lg btn-primary guest-login-submit-button" onClick={this.toggle}>Submit</Button>
-                  </Link>
-                </ModalFooter>
                 </Modal>
             </div>
         )

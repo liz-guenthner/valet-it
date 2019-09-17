@@ -1,3 +1,7 @@
+#valet-home-form{
+    padding-top: 90px;
+}
+
 #valet-home-form form {
     padding: 0 30px;
 }
@@ -9,9 +13,18 @@
     border:none;
 }
 #valet-home-form .btn-secondary:hover {
-    color: #404040;
     background-color: #e4c670;
-    border:none;
+}
+#valet-home-form .btn.disabled {
+    color: #404040;
+    background-color: #e8e4db;
+    cursor: none;
+}
+
+#valet-home-form .btn.disabled:hover {
+    color: #404040;
+    background-color: #e8e4db;
+    cursor: default;
 }
 
 @media only screen and (min-width: 350px) {
