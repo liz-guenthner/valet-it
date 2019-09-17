@@ -9,7 +9,6 @@ import PayButtonGrey from "../paybutton";
 import PayNowForm from "../paynowform";
 import AddNewCardForm from "../addnewcardform";
 import PickUpButton from "../pickupbutton";
-import EstWaitTimeDisplay from "../est-wait-time-display";
 
 class DashboardPage extends Component {
   render() {
@@ -21,7 +20,7 @@ class DashboardPage extends Component {
         <ViewLogin>
           <StatusNumberCheckmark></StatusNumberCheckmark>
           <PayButtonGrey><PayNowForm><AddNewCardForm></AddNewCardForm></PayNowForm></PayButtonGrey>
-          <PickUpButton><EstWaitTimeDisplay></EstWaitTimeDisplay></PickUpButton>
+          <PickUpButton></PickUpButton>
         </ViewLogin>
       </LoginCard>
     );

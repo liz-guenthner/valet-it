@@ -5,7 +5,6 @@ import LogoButton from "../logoButton";
 import ViewLogin from "../view-login";
 import { Link } from "react-router-dom";
 import StatusNumberCheckmarkPaid from "../status-number-checkmark-paid";
-import PickUpButton from "../pickupbutton";
 import EstWaitTime from "../est-wait-time";
 
 class DashboardPickUpPage extends Component {
