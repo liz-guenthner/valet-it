@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import LoginPage from "../src/components/login-page";
 import DashboardPage from "../src/components/dashboard-page";
+import DashboardPaidPage from "../src/components/dashboard-paid";
 import ArrivedView from "../src/components/arrived-view";
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import ValetHomePage from "./components/valet-homepage";
@@ -15,6 +16,7 @@ class App extends Component {
       <Router>
         <Route path='/' exact component={LoginPage}></Route>
         <Route path='/dashboard' exact component={DashboardPage}></Route>
+        <Route path='/dashboard-paid' exact component={DashboardPaidPage}></Route>
         <Route path='/arrived-view' exact component={ArrivedView}></Route>
         <Route path='/valet-homepage' exact component={ValetHomePage}></Route>
         <Route path='/valet-park' exact component={ValetPark}></Route>
