@@ -1,16 +1,16 @@
-#dashboard-view-home .status-container {
+#dashboard-view-inroute .status-container {
     width: 90%;
     margin: 0 auto;
     overflow: hidden;
     clear: both;
 }
 
-#dashboard-view-home .status-number-checkmark {
+#dashboard-view-inroute .status-number-checkmark {
     width: 33%;
     float: left;
     text-align:center;
 }
-#dashboard-view-home .number {
+#dashboard-view-inroute .number {
     background-image: url("/images/one.jpg");
     background-repeat: no-repeat;
     width: 60px;
@@ -24,33 +24,33 @@
     margin: 0 auto;
     line-height: 42px;
 }
-#dashboard-view-home #parked img {
+#dashboard-view-inroute #parked img {
     width: 60px;
     margin:0 auto;
-    display:block;
+    display:none;
 }
-#dashboard-view-home #paid img {
+#dashboard-view-inroute #paid img {
     width: 60px;
     margin: 0 auto;
-    display:block;
+    display:none;
 }
-#dashboard-view-home #inroute img {
+#dashboard-view-inroute #inroute img {
     width: 60px;
     margin: 0 auto;
+    display:none;
+}
+#dashboard-view-inroute #parked img.checked {
     display:block;
-}
-#dashboard-view-home #parked img.checked {
-    display:none;
     margin: 0 auto;
 }
-#dashboard-view-home #paid img.checked {
-    display:none;
+#dashboard-view-inroute #paid img.checked {
+    display:block;
     margin: 0 auto;
 }
-#dashboard-view-home #inroute img.checked {
-    display:none;
+#dashboard-view-inroute #inroute img.checked {
+    display:block;
     margin: 0 auto;
 }
-#dashboard-view-home span.status-text {
+#dashboard-view-inroute span.status-text {
     color: #c5bfb3;
 }

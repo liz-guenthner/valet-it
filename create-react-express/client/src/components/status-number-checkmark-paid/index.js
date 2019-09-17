@@ -5,10 +5,10 @@ import two from './two.jpg';
 import three from './three.jpg';
 import check from './check.jpg';
 
-class StatusNumberCheckmark extends React.Component {
+class StatusNumberCheckmarkPaid extends React.Component {
     render() {
         return (
-            <div id="dashboard-view-home">
+            <div id="dashboard-view-paid">
                 <div className="status-container">
                     <div className="status-block">
                         <div className="status-number-checkmark">
@@ -44,4 +44,4 @@ class StatusNumberCheckmark extends React.Component {
 
 }
 
-export default StatusNumberCheckmark;
+export default StatusNumberCheckmarkPaid;

@@ -1,6 +1,7 @@
 import React from 'react';
 import './style.css';
 import { Form, FormGroup, Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import { Link } from "react-router-dom";
 
 
 class PayNowForm extends React.Component {
@@ -24,7 +25,9 @@ class PayNowForm extends React.Component {
         <Form>
         <FormGroup>
             <div className="pay-now-text">Saved Card **** **** **** 0334</div>
-            <Button className="btn-lg pay-now-button btn-primary">Pay Now</Button>
+            <Link to='/dashboard-paid'>
+              <Button className="btn-lg pay-now-button btn-primary">Pay Now</Button>
+            </Link>
             <Button className="btn-lg add-new-button btn-primary" onClick={this.toggle}>Add Card</Button>
                 <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
                 <ModalHeader toggle={this.toggle}>Add New Card</ModalHeader>

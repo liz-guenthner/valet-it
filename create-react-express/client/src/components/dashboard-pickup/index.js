@@ -5,12 +5,9 @@ import LogoButton from "../logoButton";
 import ViewLogin from "../view-login";
 import { Link } from "react-router-dom";
 import StatusNumberCheckmarkPaid from "../status-number-checkmark-paid";
-import PayButton from "../paybutton";
-import PayNowForm from "../paynowform";
-import AddNewCardForm from "../addnewcardform";
-import PickUpButtonYellow from "../pickupbutton-yellow";
+import EstWaitTime from "../est-wait-time";
 
-class DashboardPaidPage extends Component {
+class DashboardPickUpPage extends Component {
   render() {
     return (
       <LoginCard>
@@ -19,12 +16,11 @@ class DashboardPaidPage extends Component {
         </Link>
         <ViewLogin>
           <StatusNumberCheckmarkPaid></StatusNumberCheckmarkPaid>
-          <PayButton><PayNowForm><AddNewCardForm></AddNewCardForm></PayNowForm></PayButton>
-          <PickUpButtonYellow></PickUpButtonYellow>
+          <EstWaitTime></EstWaitTime>
         </ViewLogin>
       </LoginCard>
     );
   }
 }
 
-export default DashboardPaidPage;
+export default DashboardPickUpPage;

@@ -2,7 +2,7 @@ import React from 'react';
 import './style.css';
 
 
-class EstWaitTimeDisplay extends React.Component {
+class EstWaitTime extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -26,4 +26,4 @@ class EstWaitTimeDisplay extends React.Component {
     }
   }
 
-export default EstWaitTimeDisplay;
+export default EstWaitTime;
