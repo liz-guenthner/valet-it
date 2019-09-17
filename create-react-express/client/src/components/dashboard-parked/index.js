@@ -4,14 +4,14 @@ import LoginCard from "../loginCard";
 import LogoButton from "../logoButton";
 import ViewLogin from "../view-login";
 import { Link } from "react-router-dom";
-import StatusNumberCheckmark from "../status-number-checkmark";
-import PayButtonGrey from "../paybutton";
+import StatusNumberCheckmarkParked from "../status-number-checkmark-parked";
+import PayButtonYellow from "../paybutton-yellow";
 import PayNowForm from "../paynowform";
 import AddNewCardForm from "../addnewcardform";
 import PickUpButton from "../pickupbutton";
 import EstWaitTimeDisplay from "../est-wait-time-display";
 
-class DashboardPage extends Component {
+class DashboardParkedPage extends Component {
   render() {
     return (
       <LoginCard>
@@ -19,8 +19,8 @@ class DashboardPage extends Component {
             <LogoButton></LogoButton>
         </Link>
         <ViewLogin>
-          <StatusNumberCheckmark></StatusNumberCheckmark>
-          <PayButtonGrey><PayNowForm><AddNewCardForm></AddNewCardForm></PayNowForm></PayButtonGrey>
+          <StatusNumberCheckmarkParked></StatusNumberCheckmarkParked>
+          <PayButtonYellow><PayNowForm><AddNewCardForm></AddNewCardForm></PayNowForm></PayButtonYellow>
           <PickUpButton><EstWaitTimeDisplay></EstWaitTimeDisplay></PickUpButton>
         </ViewLogin>
       </LoginCard>
@@ -28,4 +28,4 @@ class DashboardPage extends Component {
   }
 }
 
-export default DashboardPage;
+export default DashboardParkedPage;
