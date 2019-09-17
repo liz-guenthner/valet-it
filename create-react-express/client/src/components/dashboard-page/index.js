@@ -5,7 +5,7 @@ import LogoButton from "../logoButton";
 import ViewLogin from "../view-login";
 import { Link } from "react-router-dom";
 import StatusNumberCheckmark from "../status-number-checkmark";
-import PayButton from "../paybutton";
+import PayButtonGrey from "../paybutton";
 import PayNowForm from "../paynowform";
 import AddNewCardForm from "../addnewcardform";
 import PickUpButton from "../pickupbutton";
@@ -22,7 +22,7 @@ class DashboardPage extends Component {
         </Link>
         <ViewLogin>
           <StatusNumberCheckmark></StatusNumberCheckmark>
-          <PayButton><PayNowForm><AddNewCardForm></AddNewCardForm></PayNowForm></PayButton>
+          <PayButtonGrey><PayNowForm><AddNewCardForm></AddNewCardForm></PayNowForm></PayButtonGrey>
           <PickUpButton><EstWaitTimeDisplay></EstWaitTimeDisplay></PickUpButton>
           {/* <ArrivedButton><ArrivedModal></ArrivedModal></ArrivedButton> */}
         </ViewLogin>

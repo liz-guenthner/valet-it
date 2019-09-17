@@ -22,7 +22,7 @@ class PayButton extends React.Component {
     render() {
         return (
             <div className="center-buttons pay-button-modal">
-                <Button className="btn-lg pay-button btn-primary" onClick={this.toggle}>Pay</Button>
+                <Button className="btn-lg pay-button btn-primary disabled" onClick={this.toggle}>Pay</Button>
                 <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
                 <ModalHeader toggle={this.toggle}>Submit payment</ModalHeader>
                 <ModalBody>
