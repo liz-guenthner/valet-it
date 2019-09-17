@@ -1,15 +1,27 @@
-form {
+#valet-home-form form {
     padding: 0 30px;
 }
-.btn-secondary {
+#valet-home-form .btn-secondary {
     width: 140px;
-    margin: 0 15px;
+    margin: 0 0 5px 15%;
     color: #404040;
     background-color: #f6de96;
     border:none;
 }
-.btn-secondary:hover {
+#valet-home-form .btn-secondary:hover {
     color: #404040;
     background-color: #e4c670;
     border:none;
+}
+
+@media only screen and (min-width: 350px) {
+    #valet-home-form .btn-secondary {
+        margin: 0 0 5px 25%;
+    }
+}
+
+@media only screen and (min-width: 450px) {
+    #valet-home-form .btn-secondary {
+        margin: 0 15px;
+    }
 }

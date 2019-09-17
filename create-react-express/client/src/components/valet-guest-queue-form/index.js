@@ -69,7 +69,7 @@ class GuestQueueForm extends React.Component {
             </tbody>
           </Table>
         </div>
-        <div>
+        <div className="buttons">
           <Link to="/valet-homepage" >
               <Button className="btn-lg btn-primary" id="valet-home-button" onClick={this.toggle}>Home</Button>
           </Link>
