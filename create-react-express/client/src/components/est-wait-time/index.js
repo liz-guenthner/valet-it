@@ -6,8 +6,8 @@ class EstWaitTime extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-          estWaitTime: '00:00',
-          cars: 'XX'
+          estWaitTime: '10 mins',
+          cars: '02'
         };
     }
     render() {
