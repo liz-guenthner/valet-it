@@ -17,8 +17,10 @@ class LoginPage extends Component {
             <LogoButton></LogoButton>
         </Link>
         <ViewLogin>
-          <GuestLoginButton><GuestLoginForm></GuestLoginForm></GuestLoginButton>
-          <ValetDriverButton><ValetLoginForm></ValetLoginForm></ValetDriverButton>
+          <div className="homeButtons">
+            <GuestLoginButton><GuestLoginForm></GuestLoginForm></GuestLoginButton>
+            <ValetDriverButton><ValetLoginForm></ValetLoginForm></ValetDriverButton>
+          </div>
         </ViewLogin>
       </LoginCard>
     );

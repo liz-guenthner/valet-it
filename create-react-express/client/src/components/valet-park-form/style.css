@@ -1,3 +1,7 @@
+#valet-park-form {
+    padding-top: 100px;
+}
+
 #valet-park-form form {
     width:90%;
     margin:0 auto;
@@ -13,8 +17,8 @@
 #valet-park-from input {
     margin-bottom: 5px;
 }
-#valet-park-from .form-group {
-    margin-bottom:0 !important;
+.form-group {
+    margin-bottom: 10px !important;
 }
 #valet-park-form .float-left {
     float:left;
@@ -22,7 +26,7 @@
 #valet-park-form .float-right {
     float:right;
 }
-#valet-park-form .full-width{
+.full-width{
     width:100%;
     clear:both;
     margin-bottom: 20px;
@@ -41,6 +45,9 @@
     color: #404040;
     background-color: #e4c670;
     border:none;
+}
+textarea {
+    margin-bottom: 10px;
 }
 
 @media only screen and (min-width: 400px) {
