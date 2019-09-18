@@ -11,6 +11,26 @@ import AddNewCardForm from "../addnewcardform";
 import PickUpButtonYellow from "../pickupbutton-yellow";
 
 class DashboardPaidPage extends Component {
+
+  constructor(props){
+    super(props);
+    this.escFunction = this.escFunction.bind(this);
+  }
+  escFunction(event){
+    if(event.keyCode === 27) {
+      //Do whatever when esc is pressed
+      const { history } = this.props;
+      history.push(`/dashboard-pickup`);
+    }
+  }
+
+  componentDidMount(){
+    document.addEventListener("keydown", this.escFunction, false);
+  }
+  componentWillUnmount(){
+    document.removeEventListener("keydown", this.escFunction, false);
+  }
+
   render() {
     return (
       <LoginCard>

@@ -8,6 +8,26 @@ import StatusNumberCheckmarkInRoute from "../status-number-checkmark-inroute";
 import EstWaitTime from "../est-wait-time";
 
 class DashboardPickUpPage extends Component {
+
+  constructor(props){
+    super(props);
+    this.escFunction = this.escFunction.bind(this);
+  }
+  escFunction(event){
+    if(event.keyCode === 27) {
+      //Do whatever when esc is pressed
+      const { history } = this.props;
+      history.push(`/arrived-view`);
+    }
+  }
+
+  componentDidMount(){
+    document.addEventListener("keydown", this.escFunction, false);
+  }
+  componentWillUnmount(){
+    document.removeEventListener("keydown", this.escFunction, false);
+  }
+
   render() {
     return (
       <LoginCard>

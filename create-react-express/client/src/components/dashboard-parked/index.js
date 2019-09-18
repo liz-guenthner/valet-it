@@ -9,12 +9,14 @@ import PayButtonYellow from "../paybutton-yellow";
 import PayNowForm from "../paynowform";
 import AddNewCardForm from "../addnewcardform";
 import PickUpButton from "../pickupbutton";
+import { withRouter } from 'react-router-dom';
 
 class DashboardParkedPage extends Component {
+
   render() {
     return (
       <LoginCard>
-        <Link to="/">
+        <Link to="/" onClick={this.routeChange}>
             <LogoButton></LogoButton>
         </Link>
         <ViewLogin>
@@ -27,4 +29,4 @@ class DashboardParkedPage extends Component {
   }
 }
 
-export default DashboardParkedPage;
+export default withRouter(DashboardParkedPage);
