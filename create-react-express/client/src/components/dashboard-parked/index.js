@@ -5,13 +5,30 @@ import LogoButton from "../logoButton";
 import ViewLogin from "../view-login";
 import { Link } from "react-router-dom";
 import StatusNumberCheckmarkParked from "../status-number-checkmark-parked";
-import PayButtonYellow from "../paybutton-yellow";
-import PayNowForm from "../paynowform";
-import AddNewCardForm from "../addnewcardform";
+import Checkout from "../checkout";
 import PickUpButton from "../pickupbutton";
 import { withRouter } from 'react-router-dom';
 
 class DashboardParkedPage extends Component {
+
+  constructor(props){
+    super(props);
+    this.escFunction = this.escFunction.bind(this);
+  }
+  escFunction(event){
+    if(event.keyCode === 27) {
+      //Do whatever when esc is pressed
+      const { history } = this.props;
+      history.push(`/dashboard-pickup`);
+    }
+  }
+
+  componentDidMount(){
+    document.addEventListener("keydown", this.escFunction, false);
+  }
+  componentWillUnmount(){
+    document.removeEventListener("keydown", this.escFunction, false);
+  }
 
   render() {
     return (
@@ -21,7 +38,7 @@ class DashboardParkedPage extends Component {
         </Link>
         <ViewLogin>
           <StatusNumberCheckmarkParked></StatusNumberCheckmarkParked>
-          <PayButtonYellow><PayNowForm><AddNewCardForm></AddNewCardForm></PayNowForm></PayButtonYellow>
+          <Checkout></Checkout>
           <PickUpButton></PickUpButton>
         </ViewLogin>
       </LoginCard>
