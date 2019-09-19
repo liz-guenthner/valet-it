@@ -8,7 +8,8 @@ class ValetArrivedView extends React.Component {
     render() {
       return (
         <div className="valet-arrived-view">
-            <p>Let the guest know you've arrived</p>
+            <p className="guestname">Guest: Greg Gilpatrick</p>
+            <p className="message">Let the guest know you've arrived</p>
             <Link to="/valet-homepage">
                 <Button className="btn-lg btn-primary" id="valet-arrived-button">Arrived</Button>
             </Link>
